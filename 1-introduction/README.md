@@ -62,6 +62,7 @@ Throughput
 Traceroute
 
 ## 1.5 Protocol Layers
+Internet protocol stack
 
 | Internet protocol stack | Description | Packet | Example |
 |-|-|-|-|
@@ -71,6 +72,7 @@ Traceroute
 | link | data transfer between neighboring network elements |  frame | Ethernet, WiFi |
 | physical | bits on the wire |
 
+OSI reference model
 |OSI reference model|
 |-|
 |application|
@@ -80,6 +82,8 @@ Traceroute
 |network|
 |link|
 |physical|
+
+Encapsulation
 
 ![network-layer-encapsulation](./images/network-layer-encapsulation.PNG)
 
