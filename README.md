@@ -3,6 +3,7 @@ Summaries and notes from *Computer Networking (A TOP-DOWN APPROACH)*
 
 1. [Introduction](./1-introduction/README.md)
 2. [Application Layer](./2-application-layer/README.md)
+3. [Transport Layer](./3-transport-layer/README.md)
 
 ![book](./book.PNG)
 
