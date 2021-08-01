@@ -99,9 +99,11 @@ receiver controls sender so sender won't overflow receiver's buffer by transmitt
 ### 3.6.3 Connection management
 
 Establish a connection
+
 ![tcp-establish-connection](./images/tcp-establish-connection.PNG)
 
 Close a connection
+
 ![tcp-close-connection](./images/tcp-close-connection.PNG)
 
 ### 3.6.4 TCP Congestion Control
