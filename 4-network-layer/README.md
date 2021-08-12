@@ -10,10 +10,14 @@ Network layer functions:
 - routing: determine route taken by packets from source to destination (routing algorithms)
 
 Network layer planes:
-- data plane
-- control plane
+- data plane: forwarding
+- control plane: routing
 
+Network control plane's two approaches:
+- per-router control
 ![per-router-control-plane](./images/network-layer-plane-a.PNG)
+
+- logically centralized control
 ![logically-centralized-control-plane](./images/network-layer-plane-b.PNG)
 (CA: control agents)
 
@@ -31,9 +35,12 @@ Input port
 - line termination (physical layer)
 - link layer protocol
 - decentralized switching
-  - using header field values + forwarding table (in input port memory) to lookup output
-    - destination-based forwarding: forward based only on dest IP (traditional)
-    - generalized forwarding forward based on any set of header filed values
+  - using header field values + forwarding/flow table (in input port memory) to lookup output
+ 
+| forwarding | description | table |
+|-|-|-|
+| destination-based forwarding | forward based only on dest IP | forwarding table
+| generalized forwarding | forward based on any set of header filed values | flow table |
   
 ![router-input-port](./images/router-input-port.PNG)
 
@@ -104,3 +111,26 @@ OpenFlow: flow table to unify different kinds of devices
 | Firewall | IP address and TCP/UCP port | permit or deny |
 | NAT | IP address and port | rewrite address and port | 
 
+## 4.5 Routing Protocols
+Goal: determine "good" paths(routes) from sending hosts to receiving host, through network of routers
+
+Classification:
+- centralized/global: Link State algorithm (Dijkstra)
+- decentralized: Distance Vector algorithm (Dynamic Programming)
+
+## 4.6 Intra/Inter Autonomous System Routing Protocols
+Autonomous System (AS): aggregate routers into regions, a.k.a domains
+
+Intra-AS Routing: a.k.a IGP (Interior Gateway Protocol)
+- RIP: Routing Information Protocol
+- OSPF: Open Shortest Path First (use Link State algorithm)
+- IGRP: Interior Gateway Routing Protocol
+
+Inter-AS Routing: a.k.a BGP (Border Gateway Protocol)
+
+## 4.7 ICMP: Internet Control Message Protocol
+Goal: used by hosts/routes to communicate network-level info
+- error reporting: unreachable host, network, port, protocol
+- ICMP message carried in IP datagram
+- echo request/reply (used by ping)
+- TTL expired & dest port unreachable (used by Traceroute)
