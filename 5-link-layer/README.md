@@ -83,3 +83,9 @@ Ethernet frame:
 - CRC: cyclic redundancy check: drop frame if error detected
 
 ### 5.4.3 Switch
+Switch:
+- link-layer device
+  - store and forward frames
+  - examine incoming frame's MAC, selectively forward to outgoing links
+- plug and play, self learning
+  - switch not need to be configured
