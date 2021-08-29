@@ -1,47 +1,49 @@
 # 1. Introduction
 
 ## 1.1 What is the Internet
-Nuts and bolts view
+
+### Nuts and bolts view
 - hosts (end systems): running network apps
 - communication links
 - packet switches
   - router
   - link-layer switch
-- ISP: Internet Service Provider
 
 ![internet-components](./images/internet-components.PNG)
 
-Service view
+(ISP: Internet Service Provider)
+
+### Service view
 - infrastructure that provides services and programming interface to apps
-
-
-Network of network
+ 
+### Network of network
 
 ![isp-connection](./images/isp-connection.PNG)
-
+(IXP: Internet Exchange Point)
 
 ## 1.2 Network Edge
 Access networks
-- DSL: Digital Subscriber Line
-- Cable Internet access
-- FTTH: Fiber To The Home
-- Ethernet
+- Wired
+  - DSL: Digital Subscriber Line
+  - Cable Internet access
+  - FTTH: Fiber To The Home
+  - Ethernet
 - Wireless
   - wireless LANs (WiFi)
-  - wide-area wireless access (3G, 4G)
+  - wide-area wireless access (3G, 4G, 5G)
   
 ## 1.3 Network Core
-mesh of interconnected routers
-routing and forwarding
+- mesh of interconnected routers
+- routing and forwarding
 
-packet switching
+### Packet switching
 - hosts break application-layer messages into packets
 - store and forward
 - queueing and loss
 
 ![packet-switching](./images/packet-switching.PNG)
 
-circuit switching
+### Circuit switching
 - end to end resources allocated to, reserved for "call" between source & dest
 
 ## 1.4 Delay, Loss, Throughput in Networks
